@@ -11,6 +11,7 @@ public class PA1b {
 	// TODO: document this method
 	public static void main(String[] args) {
 		// TODO: write your code here
+		System.out.println("All counts must be non-negative!");
 	}
 
 }
