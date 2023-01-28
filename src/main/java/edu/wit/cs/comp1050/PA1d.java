@@ -29,19 +29,19 @@ public class PA1d {
 
 
 		if ((weight > 0)&&(weight <= 1)) {
-			System.out.printf("The shipping cost will be $3.50.");
+			System.out.printf("It will cost $3.50 to ship this package.");
 		}
 		else if ((weight > 1)&&(weight <= 3)) {
-			System.out.printf("The shipping cost will be $5.50.");
+			System.out.printf("It will cost $5.50 to ship this package.");
 		}
 
 		else if ((weight > 3)&&(weight <= 10)) {
-			System.out.printf("The shipping cost will be $8.50.");
+			System.out.printf("It will cost $8.50 to ship this package.");
 		}
 		else if ((weight > 10)&&(weight <= 20)) {
-			System.out.printf(" The shipping cost will be $10.50.");
+			System.out.printf("It will cost $10.50 to ship this package.");
 		}
-
+		System.out.println("Shipping cost of package is $"+ weight);
 	}
 
 }
