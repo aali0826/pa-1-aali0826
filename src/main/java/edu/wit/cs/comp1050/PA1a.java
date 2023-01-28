@@ -6,7 +6,7 @@ public class PA1a {
 	// TODO: document this method
 	public static void main(String[] args) {
 		// TODO: write your code here
-		System.out.printf("Hello World!%n");
+		System.out.printf("Hello World!");
 	}
 
 
