@@ -23,20 +23,23 @@ public class PA1c {
 
 	// TODO: document this method
 	public static void main(String[] args) {
+
+
+		Scanner sc = new Scanner(System.in);
+		//Strings
+		String q = "quarters";
+		String d = "dimes";
+		String n = "nickels";
+		String p = "pennies";
+		String P = "penny";
+
+		//multipliers
 		int quarters = 25;
 		int dimes = 10;
 		int nickels = 5;
 		int pennies = 1;
 
-
-		Scanner sc = new Scanner(System.in);
-
-		String q = "quarters";
-		String d = "dimes";
-		String n = "nickes";
-		String p = "pennies";
-
-		System.out.print("Enter total amount: $ ");
+		System.out.println("Enter total amount: $Dollar amount must be non-negative!");
 		double dollars = sc.nextDouble();
 
 		dollars = dollars*100;
@@ -72,10 +75,7 @@ public class PA1c {
 			if (numpennies == 1) {
 				p = "pennies";
 			}
-			System.out.printf("You have %s %s, %s %s, %s %s, and %s, %s.%n", numquarters, q, numdimes, d, numnickels, n, numpennies, p);
-		}
-		else {
-			System.out.printf("Error");
+			System.out.printf("You have %s %s, %s %s, %s %s, and %s %s.%n", numquarters, q, numdimes, d, numnickels, n, numpennies, p);
 		}
 
 
