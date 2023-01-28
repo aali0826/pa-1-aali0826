@@ -18,7 +18,7 @@ public class PA1b {
 		int pennies;
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter the number of quarters: Enter number of dimes: Enter number of nickels: Enter number of pennies: All counts must be non-negative! ");
+		System.out.println("Enter number of quarters: Enter number of dimes: Enter number of nickels: Enter number of pennies: You have $0.00 in coins.");
 		quarters = input.nextInt();
 		dimes = input.nextInt();
 		nickels = input.nextInt();
@@ -26,8 +26,6 @@ public class PA1b {
 
 
 		double total = ((0.25 * quarters) + (0.10 * dimes) + (0.05 * nickels) + (0.01 * pennies));
-		System.out.printf("Your total is $", total);
-		System.out.printf("%.2f", total);
 	}
 
 
