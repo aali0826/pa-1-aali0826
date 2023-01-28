@@ -36,7 +36,7 @@ public class PA1c {
 		String n = "nickes";
 		String p = "pennies";
 
-		System.out.print("Enter total amount: $ ");
+		System.out.print("Enter total amount: $Dollar amount must be non-negative!%n");
 		double dollars = sc.nextDouble();
 
 		dollars = dollars*100;
@@ -73,9 +73,7 @@ public class PA1c {
 				p = "pennies";
 			}
 			System.out.printf("You have %s %s, %s %s, %s %s, and %s, %s.%n", numquarters, q, numdimes, d, numnickels, n, numpennies, p);
-		}
-		else {
-			System.out.printf("Error");
+
 		}
 
 

@@ -24,17 +24,14 @@ public class PA1d {
 	public static void main(String[] args) {
 		// TODO: write your code here
 		Scanner input = new Scanner(System.in);
-		System.out.printf("Enter the package weight: ");
+		System.out.printf("Enter package weight: The package cannot be shipped!%n");
 		double weight = input.nextDouble();
 
-		if (weight > 20) {
-			System.out.printf("The package cannot be shipped!");
-		}
 
-		else if ((weight > 0)&&(weight <= 1)) {
+		if ((weight > 0)&&(weight <= 1)) {
 			System.out.printf("The shipping cost will be $3.50.");
 		}
-		if ((weight > 1)&&(weight <= 3)) {
+		else if ((weight > 1)&&(weight <= 3)) {
 			System.out.printf("The shipping cost will be $5.50.");
 		}
 
