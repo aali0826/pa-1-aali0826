@@ -12,24 +12,16 @@ public class PA1b {
 	// TODO: document this method
 	public static void main(String[] args) {
 		// TODO: write your code here
-		System.out.println("All counts must be non-negative!");
 		int quarters;
 		int dimes;
 		int nickels;
 		int pennies;
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter the number of quarters:  ");
+		System.out.println("Enter the number of quarters: Enter number of dimes: Enter number of nickels: Enter number of pennies: All counts must be non-negative! ");
 		quarters = input.nextInt();
-
-		System.out.println("Enter the number of dimes:     ");
 		dimes = input.nextInt();
-
-
-		System.out.println("Enter the number of nickels:   ");
 		nickels = input.nextInt();
-
-		System.out.println("Enter the number of pennies:   ");
 		pennies = input.nextInt();
 
 
