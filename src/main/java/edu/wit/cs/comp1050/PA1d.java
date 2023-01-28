@@ -41,7 +41,6 @@ public class PA1d {
 		else if ((weight > 10)&&(weight <= 20)) {
 			System.out.printf("It will cost $10.50 to ship this package.");
 		}
-		System.out.println("Shipping cost of package is $"+ weight);
 	}
 
 }

@@ -23,7 +23,7 @@ public class PA1e {
 		System.out.printf("Enter a String: ");
 
 		String str = input.nextLine();
-		System.out.printf("There are " + countUppercase(str) + " uppercase letters in \"" + str + "\".");
+		System.out.printf("There is " + countUppercase(str) + " uppercase character in the String \"" + str + "\".");
 	}
 	public static int countUppercase(String str) {
 		int count = 0;
