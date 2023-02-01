@@ -17,6 +17,18 @@ public class PA1d {
 	 * @return cost to ship
 	 */
 	public static double shippingCost(double weight) {
+		if ((weight > 0)&&(weight <= 1)) {
+			return 3.50;
+		}
+		if ((weight > 1)&&(weight <= 3)) {
+			return 5.50;
+		}
+		if ((weight > 3)&&(weight <= 10)) {
+			return 8.50;
+		}
+		if ((weight > 10)&&(weight <= 20)) {
+			return 10.50;
+		}
 		return 0.0; // TODO: replace with your method implementation
 	}
 
@@ -24,22 +36,25 @@ public class PA1d {
 	public static void main(String[] args) {
 		// TODO: write your code here
 		Scanner input = new Scanner(System.in);
-		System.out.printf("Enter package weight: The package cannot be shipped!%n");
+		System.out.printf("Enter package weight: ");
 		double weight = input.nextDouble();
 
 
 		if ((weight > 0)&&(weight <= 1)) {
-			System.out.printf("It will cost $3.50 to ship this package.");
+			System.out.printf("It will cost $3.50 to ship this package.%n");
 		}
 		else if ((weight > 1)&&(weight <= 3)) {
-			System.out.printf("It will cost $5.50 to ship this package.");
+			System.out.printf("It will cost $5.50 to ship this package.%n");
 		}
 
 		else if ((weight > 3)&&(weight <= 10)) {
-			System.out.printf("It will cost $8.50 to ship this package.");
+			System.out.printf("It will cost $8.50 to ship this package.%n");
 		}
 		else if ((weight > 10)&&(weight <= 20)) {
-			System.out.printf("It will cost $10.50 to ship this package.");
+			System.out.printf("It will cost $10.50 to ship this package.%n");
+		}
+		else {
+			System.out.printf("The package cannot be shipped!%n");
 		}
 	}
 

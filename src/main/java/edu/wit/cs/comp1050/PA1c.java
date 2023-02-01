@@ -31,7 +31,7 @@ public class PA1c {
 		String d = "dimes";
 		String n = "nickels";
 		String p = "pennies";
-		String P = "penny";
+		String P = "pennies";
 
 		//multipliers
 		int quarters = 25;
@@ -39,8 +39,11 @@ public class PA1c {
 		int nickels = 5;
 		int pennies = 1;
 
-		System.out.println("Enter total amount: $Dollar amount must be non-negative!");
+		System.out.printf("Enter total amount: ");
 		double dollars = sc.nextDouble();
+		if (dollars<0){
+			System.out.printf("$Dollar amount must be non-negative!%n");
+		}
 
 		dollars = dollars*100;
 		int dollarsInt = convertToInt(dollars);
@@ -64,18 +67,18 @@ public class PA1c {
 				numpennies++;
 			}
 			if (numquarters == 1) {
-				q = "quarters";
+				q = "quarter";
 			}
 			if (numdimes == 1) {
-				d = "dimes";
+				d = "dime";
 			}
 			if (numnickels == 1) {
-				n = "nickels";
+				n = "nickel";
 			}
 			if (numpennies == 1) {
-				p = "pennies";
+				p = "penny";
 			}
-			System.out.printf("You have %s %s, %s %s, %s %s, and %s %s.%n", numquarters, q, numdimes, d, numnickels, n, numpennies, p);
+			System.out.printf("$You have %s %s, %s %s, %s %s, and %s %s.%n", numquarters, q, numdimes, d, numnickels, n, numpennies, p);
 		}
 
 
